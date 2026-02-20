@@ -1,0 +1,14 @@
+    def solve():
+        n = int(input())  
+        solved = 0        
+     
+        for _ in range(n):
+            votes = list(map(int, input().split()))  
+            if sum(votes) >= 2:  
+                solved += 1
+     
+        print(solved)
+     
+    if __name__ == "__main__":
+        solve()
+
