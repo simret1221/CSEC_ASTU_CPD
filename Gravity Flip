@@ -1,0 +1,8 @@
+    def solve():
+        n = int(input()) 
+        cubes = list(map(int, input().split()))  
+        cubes.sort()  
+        print(*cubes)  
+     
+    if __name__ == "__main__":
+        solve()
