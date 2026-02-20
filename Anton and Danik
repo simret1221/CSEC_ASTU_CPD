@@ -1,0 +1,16 @@
+    def solve():
+        n = int(input())
+        s = input().strip()  # read the string of game results
+     
+        anton_wins = s.count('A')
+        danik_wins = s.count('D')
+     
+        if anton_wins > danik_wins:
+            print("Anton")
+        elif danik_wins > anton_wins:
+            print("Danik")
+        else:
+            print("Friendship")
+     
+    if __name__ == "__main__":
+        solve()
