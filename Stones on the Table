@@ -1,0 +1,8 @@
+    def solve():
+        input() 
+        s = input().strip()
+        
+        print(sum(s[i] == s[i-1] for i in range(1, len(s))))
+     
+    if __name__ == "__main__":
+        solve()
