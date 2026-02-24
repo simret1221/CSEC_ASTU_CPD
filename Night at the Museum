@@ -1,0 +1,15 @@
+    def solve():
+        name = input().strip()
+        
+        current = 'a'
+        total_moves = 0
+        
+        for ch in name:
+            diff = abs(ord(ch) - ord(current))
+            total_moves += min(diff, 26 - diff)
+            current = ch
+        
+        print(total_moves)
+     
+    if __name__ == "__main__":
+        solve()
