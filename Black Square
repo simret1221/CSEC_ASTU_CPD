@@ -1,0 +1,13 @@
+    def solve():
+        calories = list(map(int, input().split()))  
+        s = input().strip()
+        
+        total = 0
+        
+        for ch in s:
+            total += calories[int(ch) - 1]
+        
+        print(total)
+     
+    if __name__ == "__main__":
+        solve()
